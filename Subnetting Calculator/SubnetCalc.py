@@ -61,16 +61,16 @@ while True:
     lastUsableAddress[3] -= 1
 
     print("_____________________________________________\n")
-    print("IPv4 Address: "+ipAddress)
-    print("Subnet Mask: "+subnetMask)
-    print("Range of IPs: "+formatToAddress(networkAddress) +
+    print("IPv4 Address:                 | "+ipAddress)
+    print("Subnet Mask:                  | "+subnetMask)
+    print("Range of IPs:                 | "+formatToAddress(networkAddress) +
         " - "+formatToAddress(broadcastAddress))
-    print("Range of Usable Host IPs: "+formatToAddress(firstUsableAddress) +
+    print("Range of Usable Host IPs:     | "+formatToAddress(firstUsableAddress) +
         " - "+formatToAddress(lastUsableAddress))
-    print("Total Number of Hosts: "+str(totalNumOfHosts))
-    print("Total Number of Usable Hosts: "+str(totalNumOfHosts-2))
-    print("Binary Subnet Mask: " + str(binaryIP))
-    print("Binary IP address:  "+str(binarySubnet))
+    print("Total Number of Hosts:        | "+str(totalNumOfHosts))
+    print("Total Number of Usable Hosts: | "+str(totalNumOfHosts-2))
+    print("Binary Subnet Mask:           | " + str(binaryIP))
+    print("Binary IP address:            | "+str(binarySubnet))
 
     if(input("\nDo you want to exit this program? (y/n) ")=="y"):
         break
