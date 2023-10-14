@@ -3,10 +3,9 @@ import math
 
 def formatToAddress(ip: list):
     ipString = ""
-    for i in range(4):
-        ipString += str(ip[i])+"."
+    for num in range(4):
+        ipString += str(ip[num])+"."
     ipString = ipString[:-1]
-
     return ipString
 
 
@@ -63,15 +62,14 @@ while True:
     print("_____________________________________________\n")
     print("IPv4 Address:                 | "+ipAddress)
     print("Subnet Mask:                  | "+subnetMask)
-    print("Range of IPs:                 | "+formatToAddress(networkAddress) +
-        " - "+formatToAddress(broadcastAddress))
+    print("Network Address:              | "+formatToAddress(networkAddress))
+    print("Broadcast Address:            | "+formatToAddress(broadcastAddress))
     print("Range of Usable Host IPs:     | "+formatToAddress(firstUsableAddress) +
-        " - "+formatToAddress(lastUsableAddress))
+          " - "+formatToAddress(lastUsableAddress))
     print("Total Number of Hosts:        | "+str(totalNumOfHosts))
     print("Total Number of Usable Hosts: | "+str(totalNumOfHosts-2))
     print("Binary Subnet Mask:           | " + str(binaryIP))
     print("Binary IP address:            | "+str(binarySubnet))
 
-    if(input("\nDo you want to exit this program? (y/n) ")=="y"):
+    if (input("\nDo you want to exit this program? (y/n) ") == "y"):
         break
-    
